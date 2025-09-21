@@ -51,8 +51,8 @@ export default function SellScreen() {
       <ScrollView contentContainerStyle={styles.scrollPad}>
         <SectionTitle>Sælg din billet</SectionTitle>
 
-        <Input placeholder="🎤 Event / titel" value={form.title} onChangeText={(v) => handleChange('title', v)} />
-        <Input placeholder="🏢 Partner (fx Tivoli, Royal Arena)" value={form.partner} onChangeText={(v) => handleChange('partner', v)} />
+        <Input placeholder=" Event / titel" value={form.title} onChangeText={(v) => handleChange('title', v)} />
+        <Input placeholder=" Partner (fx Tivoli, Royal Arena)" value={form.partner} onChangeText={(v) => handleChange('partner', v)} />
 
         <View>
           <Text style={styles.label}>Kategori</Text>
@@ -71,14 +71,14 @@ export default function SellScreen() {
 
         <Row>
           <Input
-            placeholder="💰 Pris (DKK)"
+            placeholder="Pris (DKK)"
             value={form.price}
             onChangeText={(v) => handleChange('price', v.replace(/[^0-9]/g, ''))}
             keyboardType="numeric"
             style={{ flex: 1, marginRight: 8 }}
           />
           <Input
-            placeholder="🔢 Antal"
+            placeholder=" Antal"
             value={form.qty}
             onChangeText={(v) => handleChange('qty', v.replace(/[^0-9]/g, ''))}
             keyboardType="numeric"
@@ -86,9 +86,9 @@ export default function SellScreen() {
           />
         </Row>
 
-        <Input placeholder="📍 By (valgfri)" value={form.city} onChangeText={(v) => handleChange('city', v)} />
+        <Input placeholder=" By (valgfri)" value={form.city} onChangeText={(v) => handleChange('city', v)} />
         <Input
-          placeholder="📝 Note (valgfri)"
+          placeholder=" Beskrivelse (valgfri)"
           value={form.note}
           onChangeText={(v) => handleChange('note', v)}
           multiline
